@@ -105,8 +105,13 @@ img {
   color: #404bbf;
 }
 .order {
-  background-color: #2e2f42;
   padding: 188px 0;
+  background-color: #2e2f42;
+  background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+    url(../images/people_office_background.jpg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: contain;
 }
 .order-titul {
   font-weight: 700;
