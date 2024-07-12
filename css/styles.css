@@ -162,6 +162,7 @@ img {
   margin: 0 auto;
   min-width: 169px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .order-button:hover,
 .order-button:focus {
@@ -233,7 +234,7 @@ img {
 .team {
   background-color: #f4f4fd;
   color: #2e2f42;
-  padding: 120px 0 0;
+  padding: 120px 0;
 }
 .team-ul {
   display: flex;
@@ -253,6 +254,9 @@ img {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
+  border-radius: 0 0 4px 4px;
+  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+  background-color: #fff;
 }
 .team-name .titul-three {
   margin-bottom: 8px;
@@ -282,9 +286,11 @@ img {
   align-items: center;
   border-radius: 50% 50%;
   background-color: #4d5ae5;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .team-icon {
   fill: #f4f4fd;
+  height: 16px;
 }
 .portfolio {
   background-color: #fff;
@@ -312,21 +318,39 @@ img {
   border-left: 1px solid #e7e9fc;
   border-right: 1px solid #e7e9fc;
 }
-.logo-footer {
-  margin-bottom: 16px;
-  display: inline-block;
-}
 .footer-main {
   background-color: #2e2f42;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  display: flex;
+}
+.footer-container {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #f4f4fd;
-  padding: 100px 0;
 }
-.logo-footer .span-studio {
-  color: #f4f4fd;
+.footer-social {
+  margin-left: 120px;
 }
+.footer-social .paragraph {
+  font-weight: 500;
+}
+.footer-social .team-social-ul {
+  gap: 16px;
+}
+.footer-social .team-icon {
+  height: 24px;
+}
+.logo-footer {
+  margin-bottom: 16px;
+  display: inline-block;
+}
+.logo-footer .span-studio,
 .footer-main .paragraph {
   color: #f4f4fd;
+}
+.footer-social .team-social-a:hover,
+.footer-social .team-social-a:focus {
+  background-color: #31d0aa;
 }
