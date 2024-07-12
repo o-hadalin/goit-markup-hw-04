@@ -372,6 +372,9 @@ img {
 .footer-container {
   margin-right: 120px;
 }
+.footer-main .paragraph {
+  color: #ffffff;
+}
 .footer-social .paragraph {
   font-weight: 500;
   color: #ffffff;
@@ -387,8 +390,7 @@ img {
   margin-bottom: 16px;
   display: inline-block;
 }
-.logo-footer .span-studio,
-.footer-main .paragraph {
+.logo-footer .span-studio {
   color: #f4f4fd;
 }
 .footer-social .team-social-a:hover,
