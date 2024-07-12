@@ -133,7 +133,8 @@ img {
     url(../images/people_office_background.jpg);
   background-repeat: no-repeat;
   background-position: 50% 50%;
-  background-size: 1440px auto;
+  background-size: cover;
+  max-width: 1440px;
   margin: 0 auto;
 }
 .order-titul {
@@ -199,6 +200,7 @@ img {
   width: 100%;
   height: 112px;
   justify-content: center;
+  align-items: center;
   border: 1px solid #8e8f99;
   border-radius: 4px;
   margin-bottom: 8px;
@@ -245,12 +247,13 @@ img {
   background-color: #fff;
   align-items: center;
   border-radius: 0 0 4px 4px;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 .team-li:last-child {
   margin-right: 0;
 }
 .team-name {
-  padding: 32px 16px;
+  padding: 32px 0;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
@@ -266,6 +269,7 @@ img {
   gap: 24px;
   margin-top: 8px;
   width: 100%;
+  justify-content: center;
 }
 .team-social-li {
   width: 40px;
@@ -303,6 +307,7 @@ img {
 }
 .portfolio-li {
   width: calc((100% - 2 * 24px) / 3);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .portfolio-li:nth-last-child(-n + 3) {
   margin-bottom: 0;
@@ -347,17 +352,22 @@ img {
 .portfolio-li:focus .portfolio-name {
   box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
+.portfolio-li:hover,
+.portfolio-li:focus {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
 .footer-main {
   background-color: #03051c;
   padding-top: 100px;
   padding-bottom: 100px;
-  display: flex;
 }
 .footer-container {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #f4f4fd;
+  display: flex;
+  align-items: baseline;
 }
 .footer-social {
   margin-left: 120px;
